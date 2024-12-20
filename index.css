@@ -1,25 +1,42 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e9f7ef; /* Vert clair pour le fond */
+    background-color: #e9f7ef;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Permet d'empiler les éléments verticalement */
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 
+.care{
+    color: black;
+}
+
+.connect{
+    color: #155724;
+}
+.careconnect {
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 4em;
+    margin-top: 10px; 
+    margin-bottom: 0px;
+}
+
 .login-container {
-    background-color: #d4edda; /* Vert pâle */
+    background-color: #d4edda;
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
     max-width: 400px;
+    margin-top: 30px;
 }
 
 h2 {
-    color: #155724; /* Vert foncé */
+    color: #155724; 
     margin-bottom: 20px;
 }
 
@@ -35,7 +52,7 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #c3e6cb; /* Bordure vert clair */
+    border: 1px solid #c3e6cb; 
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -46,7 +63,7 @@ input:focus {
 }
 
 button {
-    background-color: #28a745; /* Bouton vert */
+    background-color: #28a745; 
     color: white;
     padding: 10px 15px;
     border: none;
@@ -57,7 +74,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838; /* Vert plus foncé au survol */
+    background-color: #218838; 
 }
 
 p {
