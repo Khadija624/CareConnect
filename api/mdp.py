@@ -3,7 +3,11 @@ from flask_mail import Mail, Message
 from flask_cors import CORS  
 import os
 
-app = Flask(__name__, static_folder='../public')
+current_directory = os.path.dirname(os.path.abspath(__file__))  # Dossier de `api/mdp.py`
+public_folder = os.path.abspath(os.path.join(current_directory, '../public'))  # Remonte au parent
+
+app = Flask(__name__)
+
 CORS(app)  
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -39,7 +43,7 @@ def forgot_password():
         return jsonify({"message": "Erreur lors de l'envoi de l'email."}), 500
 @app.route('/')
 def index():
-    return send_from_directory(app.static_folder, 'mdp.html')
+    return send_from_directory(public_folder, 'mdp.html')
 if __name__ == '__main__':
     app.run(debug=True)
 
