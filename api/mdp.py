@@ -1,9 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify,send_from_directory
 from flask_mail import Mail, Message
 from flask_cors import CORS  
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../public')
 CORS(app)  
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -37,7 +37,9 @@ def forgot_password():
     except Exception as e:
         print(e)
         return jsonify({"message": "Erreur lors de l'envoi de l'email."}), 500
-
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'mdp.html')
 if __name__ == '__main__':
     app.run(debug=True)
 
