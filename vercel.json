@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/mdp.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "api/mdp.py" }
+    ]
+  }
+  
