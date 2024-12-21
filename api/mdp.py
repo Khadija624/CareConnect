@@ -4,7 +4,7 @@ from flask_cors import CORS
 import os
 
 current_directory = os.path.dirname(os.path.abspath(__file__))  # Dossier de `api/mdp.py`
-public_folder = os.path.abspath(os.path.join(current_directory, '../public'))  # Remonte au parent
+public_folder = os.path.abspath(os.path.join(current_directory, './public'))  # Remonte au parent
 
 app = Flask(__name__)
 
@@ -43,7 +43,7 @@ def forgot_password():
         return jsonify({"message": "Erreur lors de l'envoi de l'email."}), 500
 @app.route('/')
 def index():
-    return send_from_directory(public_folder, 'mdp.html')
+    return send_from_directory(public_folder, 'mdp.html') 
 if __name__ == '__main__':
     app.run(debug=True)
 
