@@ -38,7 +38,6 @@ body {
 }
 
 .brand-name2 {
-    margin-left: 10px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -67,12 +66,10 @@ body {
     color: #004d40;
 }
 
-
 /* Hero Section */
 .hero-section {
     padding: 40px;
-    background-color:white;
-    
+    background-color: white;
 }
 
 .hero-container {
@@ -100,6 +97,7 @@ body {
     color: #666;
     line-height: 1.6;
 }
+
 .hero-search {
     display: flex;
     align-items: center;
@@ -113,7 +111,7 @@ body {
     border-radius: 50px;
     outline: none;
     flex: 1;
-    color: #2D3748; /* Dark text color */
+    color: #2D3748;
     font-weight: 500;
     background-color: #f9f9f9;
 }
@@ -124,13 +122,13 @@ body {
 }
 
 .hero-search input[type="text"]:focus {
-    border-color: #007BFF; /* Optional: Change border color when focused */
+    border-color: #007BFF;
 }
 
 .hero-search button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #28a745; /* Green background */
+    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 50px;
@@ -140,9 +138,8 @@ body {
 }
 
 .hero-search button:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #218838;
 }
-
 
 .hero-image {
     flex: 1;
@@ -173,59 +170,44 @@ body {
     }
 }
 
-
-/* Features Section *//* Features Section */
+/* Features Section */
 .features {
-    margin-left: 60px;
-    margin-right: 40px;
     display: flex;
-    width: 1300px;
-    justify-content: space-around;
-    height: 170px;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 40px 20px;
-    background-color: #28a745;
-   
-    border-radius: 15px;
+    background-color: #ffffff; /* Subtle background color to separate the section */
 }
 
 .feature-card {
     text-align: center;
     padding: 20px;
-    
-    color: white;
-    border-radius: 15px;
-    max-width: 300px;
-    max-height: 200px;
-    flex: 1;
-    margin: 0 10px;
-   
+    color: #004d40; /* Consistent dark green text */
+    background-color: #ffffff; /* White card background for a cleaner look */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border-color: #28a745; /* Highlight the card border on hover */
 }
 
-.features .news img{
-    width: 100px;
-    height: 100px;
-
-}
-.features .net img{
-
-    width: 100px;
-    height: 100px;
-
-}
-.features .form img{
-
-    width: 100px;
-    height: 100px;
-
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
+.feature-card:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
 
 .feature-card h3 {
     font-size: 1.5rem;
@@ -233,7 +215,16 @@ body {
     font-weight: bold;
 }
 
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Subtle text color */
+}
 
+.features a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -243,8 +234,7 @@ body {
     }
 
     .feature-card {
-        margin: 20px 0;
-        max-width: 90%;
+        width: 90%;
     }
 }
 
@@ -272,58 +262,324 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* Accessible Section Styling */
+.accessible-section {
+    background-color: #fff8ee; /* Light beige background */
+  }
+  
+  .accessible-container {
+    display: flex;
+    align-items: center;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .accessible-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .accessible-text {
+    display: flex;
+    
+    justify-content: center; 
+    text-align: left; 
+   
+    padding-left: 60px; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .accessible-icon img {
+    width: 50px; /* Icon size */
+    height: 50px;
+  }
+  
+  .accessible-text h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #333; /* Dark text */
+  }
+  
+  .accessible-text p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #777; /* Subtle gray text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .accessible-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .accessible-text {
+      justify-content: center;
+    }
+   }
+   .testimonials {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .testimonials-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2D3748;
+  }
+  
+  .testimonials-header p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-card {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .testimonial-stud {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .testimonial-stud img {
+    width: 4rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+  
+  .testimonial-stud h4 {
+    font-size: 1rem;
+    margin: 0;
+    color: #2D3748;
+  }
+  
+  .testimonial-author span {
+    font-size: 0.875rem;
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 
-/* Responsive Design for Smaller Screens */
+  /* Newsletter Section */
+.newsletter {
+    background-color: #520d6f;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    position: relative; /* For adding decorative elements */
+  }
+  
+  .newsletter-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter-container p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #d1c5f6; /* Slightly lighter text color */
+  }
+  
+  .newsletter-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .newsletter-container input[type="email"] {
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .newsletter-container button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-container button:hover {
+    background-color: #218838; /* Darker green */
+  }
+  
+  /* Decorative elements */
+  .newsletter::before, .newsletter::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #d1c5f6;
+    border-radius: 50%;
+  }
+  
+  .newsletter::before {
+    top: 10%;
+    left: 10%;
+  }
+  
+  .newsletter::after {
+    bottom: 10%;
+    right: 10%;
+  }
+/* Footer Styling */
+
+.footer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; /* Ensures full-width */
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Spread the columns */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Adds spacing between items */
+}
+
+.footer-about {
+    flex: 1;
+    max-width: 250px; /* Adjust column width */
+   /* Optional: centers text */
+}
+
+.footer-about img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #025540; /* Dark green */
+}
+
+.footer-about p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex: 3; /* Distributes remaining space */
+    gap: 2rem;
+}
+
+.footer-links div {
+    flex: 1; /* Ensures all columns are equal width */
+}
+
+.footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #025540; /* Dark green */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    /* Navbar */
-    .navbar {
+    .footer-container {
         flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-        gap: 10px;
+        text-align: center; /* Center-align all content */
     }
 
-    .navbar-links {
-        flex-direction: column; /* Stack links vertically */
-        gap: 10px; /* Reduce spacing */
+    .footer-links {
+        flex-direction: column;
+        align-items: center; /* Center-align links */
+        gap: 1.5rem; /* Adjust spacing */
     }
 
-    .navbar-links a {
-        font-size: 16px; /* Slightly larger font for touchscreens */
-    }
-
-    /* About Us Section */
-    .about-us h1 {
-        font-size: 2rem; /* Smaller heading font size */
-    }
-
-    .about-us p {
-        font-size: 1rem; /* Smaller paragraph font size */
-        padding: 0 1rem; /* Add padding for better readability */
-    }
-
-    /* About Cards Section */
-    .about-cards {
-        flex-direction: column; /* Stack cards vertically */
-        gap: 1rem; /* Reduce spacing between cards */
-    }
-
-    .card {
-        width: 90%; /* Make cards take 90% of the screen width */
-        margin: 0 auto; /* Center cards horizontally */
-    }
-
-    .card img {
-        width: 120px; /* Smaller image size */
-        height: 120px;
-    }
-
-    /* Footer */
-    footer {
-        padding: 1.5rem;
-        text-align: center; /* Ensure content remains centered */
-    }
-
-    footer p, footer a {
-        font-size: 14px; /* Adjust font size for smaller screens */
+    .footer-about {
+        text-align: center;
     }
 }
+
+  
