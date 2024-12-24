@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="mdp.css">
+</head>
+<body>
+    <h1 class="careconnect">
+        <span class="care">Care</span>
+        <span class="connect">Connect</span>
+    </h1>
+    <div class="forgot-password-container">
+        <h2>Forgot Your Password?</h2>
+        <p>Enter your email address below and we'll send you a link to reset your password.</p>
+        <div>
+            <label for="email">E-mail Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+            <p><button type="button" onclick="sendResetLink()">Send Reset Link</button></p>
+        </div>
+        <p>Remembered your password? <a href="../index.html">Log in</a></p>
+    </div>
+    <script src="mdp.js"></script>
+</body>
+</html>
