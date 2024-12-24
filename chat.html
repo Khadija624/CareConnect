@@ -30,25 +30,25 @@
             <h2>Membres</h2>
             <ul>
                 <li>
-                    <div class="member-item">
+                    <div class="member-item" onclick="showStudentInfo('Adil', 21, 'Computer Science', '3rd year')">
                         <span class="member-avatar">A</span>
                         Adil
                     </div>
                 </li>
                 <li>
-                    <div class="member-item">
+                    <div class="member-item" onclick="showStudentInfo('Tassnim', 20, 'Engineering', '2nd year')">
                         <span class="member-avatar">T</span>
                         Tassnim
                     </div>
                 </li>
                 <li>
-                    <div class="member-item">
+                    <div class="member-item" onclick="showStudentInfo('Ghait', 22, 'Business Administration', '4th year')">
                         <span class="member-avatar">G</span>
                         Ghait
                     </div>
                 </li>
                 <li>
-                    <div class="member-item">
+                    <div class="member-item" onclick="showStudentInfo('Nadin', 23, 'Medicine', '5th year')">
                         <span class="member-avatar">N</span>
                         Nadin
                     </div>
@@ -82,6 +82,33 @@
         </div>
     </div>
     </div>
-    
+
+    <!-- Fenêtre modale pour les informations sur les étudiants -->
+    <div class="overlay" id="overlay"></div>
+    <div class="student-info-modal" id="studentInfoModal">
+        <button class="modal-close-button" onclick="closeStudentInfo()">X</button>
+        <h2 id="studentName"></h2>
+        <p><strong>Age:</strong> <span id="studentAge"></span></p>
+        <p><strong>studies:</strong> <span id="studentStudy"></span></p>
+        <p><strong>year:</strong> <span id="studentYear"></span></p>
+    </div>
+
+    <script>
+        
+        function showStudentInfo(name, age, study, year) {
+            document.getElementById('studentName').textContent = name;
+            document.getElementById('studentAge').textContent = age;
+            document.getElementById('studentStudy').textContent = study;
+            document.getElementById('studentYear').textContent = year;
+
+            document.getElementById('studentInfoModal').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closeStudentInfo() {
+            document.getElementById('studentInfoModal').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
