@@ -488,12 +488,12 @@ footer a:hover {
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* Spread the columns */
+  justify-content: space-between; 
   align-items: flex-start;
-  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  flex-wrap: wrap; 
   max-width: 1200px;
   margin: 0 auto;
-  gap: 20px; /* Adds spacing between items */
+  gap: 70px; 
 }
 
 .footer-about {
@@ -503,7 +503,7 @@ footer a:hover {
 }
 
 .footer-about img {
-  width: 50px;
+  width: 30px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -582,5 +582,9 @@ footer a:hover {
   .footer-about {
       text-align: center;
   }
+}
+
+.logophoto{
+  display: flex;
 }
 
