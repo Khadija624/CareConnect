@@ -1,142 +1,273 @@
-body, h1, h2, h3, p, ul, li, a, button {
+body, ul {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
+  }
+  
+  body {
+    background-color: color-mix(in lab,  percentage, color percentage);
     font-family: Arial, sans-serif;
-}
-
-.navbar {
+  }
+  
+  /* Navbar Styling */
+  .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-}
-
-.navbar-logo {
+  }
+  
+  .navbar-logo {
     display: flex;
     align-items: center;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 30px; /* Adjusts the size of the logo */
     height: auto;
-}
-
-.brand-name1 {
+  }
+  
+  .brand-name1 {
     margin-left: 10px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #0e100f;
-}
-
-.brand-name2 {
+  }
+  
+  .brand-name2 {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #025540;
-}
-
-.navbar-links {
+  }
+  
+  .navbar-links {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.navbar-links a.active {
+  }
+  
+  .navbar-links a.active {
     text-decoration: underline; /* Highlights the active link */
     font-weight: bold;
     color: #004d40;
-}
-
-.navbar-links a {
+  }
+  
+  .navbar-links a {
     text-decoration: none;
     color: #000;
     font-size: 14px;
-}
-
-.navbar-links a:hover {
+  }
+  
+  .navbar-links a:hover {
     color: #004d40;
-}
-.hero-section {
+  }
+  
+  
+  
+  
+  
+  
+  
+  .hero {
     position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero-image {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 300px;
-    position: relative;
-}
-
-.hero-content {
+    display: flex;
+    justify-content: center; /* Centre horizontalement le contenu */    
+    height: 60vh; 
+    /* background-color: color-mix(in srgb, pink 50%, white 50%) */
+    background-color: beige;
+  
+  }
+  
+  .nero {
     position: absolute;
-    top: 50%;
-    left: 36%;
-    transform: translate(-50%, -50%);
-}
-
-.hero-content h1 {
+    width: 50%;
+    height: 350px;
+    margin-left: 45%;
+  }
+  
+  
+  .content {
+    margin-left: 5%;
+    margin-top: 9%;
+    margin-right: 50%;
     font-size: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-
-/* Section des villes */
-.cities-section {
-    text-align: center;
-    padding: 20px;
-}
-
-.cities-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.city-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.city {
-    position: relative;
-    text-align: center;
-}
-
-.city img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-/* Style du bouton pour chaque ville */
-.city-button {
-    position: absolute; 
-    bottom: 40px; 
-    left: 50%;
-    transform: translateX(-50%); 
-    padding: 10px 15px;
-    font-size: 0.80rem;
+  }
+  
+  
+  .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  
+  .search-container {
+    bottom: 12%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(194, 219, 183); /* Vert clair */
+    border: 2px solid green; /* Vert foncé */
+    border-radius: 42px;
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container input[type="date"],
+  .search-container button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  
+  .search-container button {
+    background-color: #28a745; /* Vert */
     color: white;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-}
-
-.city-button:hover {
-    background-color: #45a049;
-}
+    border: none;
+    font-weight: bold;
+  }
+  
+  .search-container button:hover {
+    background-color: #28a745; /* Vert foncé au survol */
+  }
+  
+  
+  
+  .gallery {
+     display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto ;  
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .city {
+    position: relative; 
+    display: flex;
+    flex-direction: row; 
+    width: 610px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  } 
+  .city img {
+    right: 46%;
+    width: 610px;
+    height: 350px;
+  }
+  
+  .city-button {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #004d40; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .city-button:hover {
+    background-color: #004d40; 
+  }
+  
+  .gallery2 {
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr); 
+   grid-template-rows: auto auto ;  
+   gap: 20px;
+   padding: 20px;
+   max-width: 1200px;
+   margin: auto;
+  }
+  
+  .city1 {
+    position: relative; 
+    display: flex;
+    flex-direction: row; 
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  } 
+  .city1 img {
+    right: 46%;
+    width: 400px;
+    height: 250px;
+  }
+  
+  .gallery3 {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto ;  
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+   }
+   
+   .city2 {
+     position: relative; 
+     display: flex;
+     flex-direction: row; 
+     width: 610px;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   } 
+   .city2 img {
+     right: 46%;
+     width: 610px;
+     height: 350px;
+   }
+   .gallery4 {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto ;  
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+   }
+   
+   .city3 {
+     position: relative; 
+     display: flex;
+     flex-direction: row; 
+     width: 400px;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   } 
+   .city3 img {
+     right: 46%;
+     width: 400px;
+     height: 250px;
+   }
+  
+  
+  
+  
+  
+  
+   
+  
