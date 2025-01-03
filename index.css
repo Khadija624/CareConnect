@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #e9f7ef;
     display: flex;
-    flex-direction: column; /* Permet d'empiler les éléments verticalement */
+    flex-direction: column; 
     align-items: center;
     height: 100vh;
     margin: 0;
