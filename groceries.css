@@ -1,146 +1,153 @@
-/* styles.css */
-body, h1, h2, h3, p, ul, li, a, button {
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+body, ul {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
+  }
+  
+  body {
+    background-color: color-mix(in lab,  percentage, color percentage);
     font-family: Arial, sans-serif;
-}
-
-.navbar {
+  }
+  
+  /* Navbar Styling */
+  .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-}
-
-.navbar-logo {
+  }
+  
+  .navbar-logo {
     display: flex;
     align-items: center;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 30px; /* Adjusts the size of the logo */
     height: auto;
-}
-
-.brand-name1 {
+  }
+  
+  .brand-name1 {
     margin-left: 10px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #0e100f;
-}
-
-.brand-name2 {
+  }
+  
+  .brand-name2 {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #025540;
-}
-
-.navbar-links {
+  }
+  
+  .navbar-links {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.navbar-links a.active {
+  }
+  
+  .navbar-links a.active {
     text-decoration: underline; /* Highlights the active link */
     font-weight: bold;
     color: #004d40;
-}
-
-.navbar-links a {
+  }
+  
+  .navbar-links a {
     text-decoration: none;
     color: #000;
     font-size: 14px;
-}
-
-.navbar-links a:hover {
+  }
+  
+  .navbar-links a:hover {
     color: #004d40;
-}
+  }
 
-.container {
-    text-align: center;
-    padding: 50px 20px;
-}
 
-.container img {
-    width: 400px;
-    margin-bottom: 20px;
-}
 
-.container h1 {
-    font-size: 2rem;
-    color: #27AE60;
-    margin-bottom: 10px;
-}
-
-.container p {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 30px;
-    margin-top: 27px;
-}
-
-.search-box {
+.places {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.search-box a {
-    font-size: 1em;
-    color: #27AE60;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.search-box a:hover {
-    text-decoration: underline;
-}
-
-.search-box input {
+.place-card {
+    border: 1px solid #ddd;
     padding: 10px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#location-form button {
+  background-color: #27AE60;
+  color: #fff; 
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size : 1rem;
+  margin-top: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+#location-form input {
+  padding: 10px;
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.search-box input::placeholder {
-    color: #aaa;
+#location-form input::placeholder {
+  color: #aaa;
 }
 
-.search-box button {
-    background-color: #27AE60; /* Vert */
-    color: #fff; /* Blanc */
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 10px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.search-box button:hover {
-    background-color:  #27AE60; /* Vert légèrement plus foncé */
-}
-
-.search-box button:active {
-    transform: scale(0.95); /* Le bouton devient légèrement plus petit lors du clic */
-}
-
-footer {
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
     text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 0.8em;
-    color: #aaa;
+    padding: 50px 20px;
 }
+
+.context {
+  position: absolute;
+
+}
+.container img {
+  margin-left: 60%;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 3rem;
+    color: #27AE60;
+    margin-bottom: 50px;
+}
+
+.container p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 50px;
+    margin-top: 27px;
+}
+
+#location-form button:hover {
+    background-color:  #27AE60; 
+  } 
+
+#location-form button:active {
+      transform: scale(0.95); /* Le bouton devient légèrement plus petit lors du clic */
+  } 
