@@ -157,20 +157,6 @@ body {
     flex-wrap: wrap;
 }
 
-.scholarship-card {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px; 
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .scholarship-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -211,6 +197,50 @@ body {
     background-color: #028657;
 }
 
+.slider-wrapper {
+    position: relative;
+    overflow: hidden; /* Cache les éléments en dehors du conteneur */
+    width: 100%; /* S'adapte à la largeur du parent */
+}
+
+.scholarship-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.scholarship-card {
+    width: 300px;
+    flex-shrink: 0; /* Empêche le rétrécissement */
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #025540;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 
 
 footer {
@@ -218,20 +248,15 @@ footer {
     padding: 20px;
     background: #025540;
     color: white;
+    width: 100%;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
-    .tips h2,
-    .resources h2 {
-        font-size: 1.8rem;
-    }
-
-    .scholarship-list {
-        grid-template-columns: 1fr;
-    }
-
-    .tip-card,
-    .scholarship-card {
-        width: 90%;
+    .prev,
+    .next {
+        width: 30px;
+        height: 30px;
+        left: 5px; /* Smaller padding for smaller screens */
+        right: 5px;
     }
 }
