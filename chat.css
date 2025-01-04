@@ -1,3 +1,7 @@
+.username1, .username2, .username3, .member-item {
+    cursor: pointer;
+}
+
 
 body, h1, h2, ul, li, p, a, button {
     margin: 0;
@@ -267,3 +271,140 @@ body {
 }
 
 
+/* Style pour les tablettes (écrans entre 600px et 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navbar-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .chat-container {
+        flex-direction: column;
+    }
+
+    .member-list, .chat-area {
+        width: 100%;
+    }
+
+    .member-item {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .chat-content {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .user-input {
+        width: calc(100% - 90px);
+    }
+
+    .send-button {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .student-info-modal {
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+/* Style pour les téléphones (écrans de moins de 600px) */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .principal {
+        padding: 5%;
+    }
+
+    .chat-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .member-list, .chat-area {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .member-item {
+        margin: 5px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .member-avatar {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .channel-header {
+        padding: 10px;
+    }
+
+    .channel-header h1 {
+        font-size: 20px;
+    }
+
+    .chat-content {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .message-text, .message-text1 {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user-input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .student-info-modal {
+        width: 90%;
+        font-size: 14px;
+        padding: 15px;
+    }
+}
