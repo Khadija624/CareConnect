@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    
 }
 
 
@@ -64,104 +65,27 @@ body {
   .navbar-links a:hover {
     color: #004d40;
   }
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #f0fdf4;
-}
 
-.scholarships {
-    padding: 20px;
-    background-color: #f0fdf4;
-}
 
-.scholarships h2 {
-    text-align: center;
-    color: #025540;
-    margin-bottom: 20px;
-}
-
-.scholarship-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.scholarship-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-    width: 300px;
-}
-
-.scholarship-card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.scholarship-card h3 {
-    color: #025540;
-    margin: 10px 0;
-}
-
-.scholarship-card p {
-    color: #555;
-}
-
-.scholarship-card .btn {
-    display: inline-block;
-    background-color: #025540;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.tips {
-    padding: 20px;
-    text-align: center;
-}
-
-.tips-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.tip-card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.tip-card h3 {
-    color: #025540;
-}
 
 /* Tips Section Styling */
 .tips {
     padding: 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color:white;
 }
 
 .tips h2 {
-    color: #025540;
+    color: #000000;
     margin-bottom: 20px;
+   
 }
 
 .tips-list {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+    flex-wrap: wrap; /
 }
 
 .tip-card {
@@ -171,11 +95,11 @@ body {
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px; /* Adds space between rows */
+    margin-bottom: 20px; 
 }
 
 .tip-card h3 {
-    color: #025540;
+    color:#000000;
     margin-bottom: 10px;
 }
 
@@ -225,9 +149,89 @@ body {
     text-decoration: none;
 }
 
+.scholarship-list {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.scholarship-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scholarship-card img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.scholarship-card h3 {
+    color: #000000;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.scholarship-card p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.scholarship-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #025540;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.scholarship-card .btn:hover {
+    background-color: #028657;
+}
+
+
+
 footer {
     text-align: center;
     padding: 20px;
     background: #025540;
     color: white;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tips h2,
+    .resources h2 {
+        font-size: 1.8rem;
+    }
+
+    .scholarship-list {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-card,
+    .scholarship-card {
+        width: 90%;
+    }
 }
