@@ -27,10 +27,37 @@ body {
     z-index: 1000;
     padding: 20px;
     border-radius: 10px;
+    text-align: center; 
+    width: 300px; 
+}
+
+.large-avatar {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    background-color: #c3e3f2; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+    font-weight: bold;
+    margin: 0 auto 20px auto; 
 }
 
 .student-info-modal h2 {
-    margin: 0;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px; 
+    text-align: center; 
+    margin-bottom: 1px;
+}
+
+
+
+.student-info-modal p {
+    text-align: left; 
+    margin: 5px 0;
 }
 
 .modal-close-button {
@@ -150,17 +177,19 @@ body {
 }
 
 .member-avatar {
-    width: 35px;
-    height: 35px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #c3e3f2;
+    margin: 70px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 35px;
     font-weight: bold;
     margin-right: 10px;
+    
 }
 
 .principal{
@@ -266,4 +295,6 @@ body {
     cursor: pointer;
 }
 
-
+.username1, .username2, .username3, .member-item {
+    cursor: pointer;
+}
