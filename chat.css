@@ -44,13 +44,25 @@ body {
     font-weight: bold;
     margin: 0 auto 20px auto; 
 }
+.avatar1{
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    background-color: #c3e3f2; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+    font-weight: bold;
+    margin: 30%;
+}
 
 .student-info-modal h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px; 
     text-align: center; 
-    margin-bottom: 1px;
 }
 
 
@@ -59,6 +71,8 @@ body {
     text-align: left; 
     margin: 5px 0;
 }
+
+
 
 .modal-close-button {
     background-color: #f44336;
@@ -177,19 +191,17 @@ body {
 }
 
 .member-avatar {
-    width: 150px;
-    height: 150px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #c3e3f2;
-    margin: 70px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 16px;
     font-weight: bold;
     margin-right: 10px;
-    
 }
 
 .principal{
