@@ -6,6 +6,9 @@ body {
   }
   
   .navbar {
+    display: flex !important;
+   visibility: visible !important;
+    opacity: 1 !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -200,69 +203,100 @@ body {
     position: relative;
   }
   
-  .video-container {
+
+  .partners {
     text-align: center;
-    margin: 20px 0;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  .partners h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
   }
   
-  .video-container iframe {
+  .carousel {
+    overflow: hidden;
     width: 100%;
-    max-width: 560px;
-    height: 315px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 50px 0;
   }
   
-  @media screen and (max-width: 1024px) {
-    .navbar-links {
-      flex-wrap: wrap;
-      gap: 15px;
-    }
+  .carousel-track {
+    display: flex;
+    width: calc(200px * 12);  /* Largeur totale (6 logos x 2) */
+    animation: scroll 15s linear infinite;
+  }
   
-    .navbar-logo {
-      margin-bottom: 10px;
+  .carousel img {
+    width: 60px;
+    margin: 0 20px;
+  }
+  
+  .partner-logo {
+    width: 150px;
+    margin: 0 30px;
+    object-fit: contain;
+  }
+  
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
     }
-    .logo {
-      width: 15px;
-      height: auto;
-      margin-right: 10px;
+    to {
+      transform: translateX(-50%);
     }
   }
   
-  /* Téléphones (jusqu'à 600px) */
-  @media screen and (max-width: 600px) {
+  
+  
+  @media screen and (max-width: 768px) {
     .navbar {
-      flex-direction: row;
-      align-items: center;
-      text-align: center;
-      height: 20%;
+      padding: 10px 15px;
     }
   
     .navbar-links {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 0px;
+      gap: 20px;
     }
   
     .navbar-links a {
-      font-size: 12px;
-      padding: 8px 12px;
-    }
-  
-    .navbar-logo {
-      display: flex;
-      align-items: center;
+      font-size: 14px;
     }
   
     .logo {
-      width: 10px;
-      height: auto;
-      margin-right: 10px;
-    }
-  
-    .brand-name1, .brand-name2 {
-      font-size: 20px;
+      width: 25px;
     }
   }
   
+  /* Téléphone (max 480px) */
+  @media screen and (max-width: 480px) {
+    .navbar {
+      padding: 10px 10px;
+      justify-content: space-between;
+    }
+  
+    .navbar-links {
+      display: flex;
+      overflow-x: auto;  /* Défilement horizontal si nécessaire */
+      -webkit-overflow-scrolling: touch;
+      gap: 15px;
+    }
+  
+    .navbar-links::-webkit-scrollbar {
+      display: none;  /* Cache la barre de défilement */
+    }
+  
+    .navbar-logo {
+      margin-right: auto;
+    }
+  
+    .logo {
+      width: 20px;
+    }
+  
+    .navbar-links a {
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+  }
