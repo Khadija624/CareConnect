@@ -343,3 +343,54 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+  }
+
+  .hero-section {
+      padding: 50px 20px;
+  }
+
+  .hero-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-text {
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .card-container {
+      padding: 0 1rem;
+  }
+
+  .card {
+      width: 100%;
+  }
+
+  .video-slider iframe {
+      height: 200px;
+  }
+
+  .feedback {
+      padding: 1rem;
+  }
+
+  .feedback textarea {
+      width: 100%;
+  }
+
+  footer {
+      padding: 0.5rem;
+  }
+}
