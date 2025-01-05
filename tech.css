@@ -208,3 +208,57 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 1024px) {
+  .navbar-links {
+    flex-wrap: wrap;
+    gap: 15px; /* Réduit légèrement l'espacement sur tablette */
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+  .logo {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+  }
+}
+
+
+/* Téléphones (jusqu'à 600px) */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    
+    height: 20%;
+    
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .navbar-links a {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 10px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .brand-name1, .brand-name2 {
+    font-size: 20px;
+  }
+}
