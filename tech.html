@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerging EdTech Trends</title>
     <link rel="stylesheet" href="tech.css">
+
 </head>
 <body>
     <header>
@@ -14,10 +15,13 @@
             <h1 class="brand-name1">Care </h1>
             <h1 class="brand-name2">Connect</h1>
           </div>
+          <div class="search-bar" id="searchBar">
+            <input type="text" placeholder="Search...">
+          </div>
           <ul class="navbar-links">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
-            <li><a href="search.html">Search</a></li>
+            <li><a href="#" onclick="toggleSearchBar()">Search</a></li>
             <li><a href="services.html">Our Service</a></li>
             <li><a href="./home.html#footer">Contact us</a></li>
           </ul>
@@ -25,50 +29,64 @@
     </header>
 
     <main>
+        <section class="intro">
+            <h2>Welcome to Emerging EdTech Trends</h2>
+            <p>Explore the latest innovations that are shaping the future of education technology.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/81F4W82P-7Q" title="Les technologies dans l'éducation" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+
         <h2>Top Trends in Educational Technology</h2>
         <div class="card-container">
-            <!-- Artificial Intelligence -->
             <div class="card">
+                <i class="fas fa-robot fa-3x"></i>
                 <h3>Artificial Intelligence</h3>
                 <p>AI is transforming education with adaptive learning, personalized tutoring, and advanced analytics.</p>
                 <a href="https://builtin.com/artificial-intelligence/ai-in-education" target="_blank">
                     <button>Learn More</button>
                 </a>
             </div>
-            <!-- Virtual Reality -->
+            
             <div class="card">
+                <i class="fas fa-vr-cardboard fa-3x"></i>
                 <h3>Virtual Reality in Classrooms</h3>
                 <p>Virtual reality provides immersive experiences for students, enhancing engagement and understanding.</p>
                 <a href="https://www.classvr.com/" target="_blank">
                     <button>Explore VR</button>
                 </a>
             </div>
-            <!-- Gamification -->
+            
             <div class="card">
+                <i class="fas fa-gamepad fa-3x"></i>
                 <h3>Gamification</h3>
                 <p>Gamified lessons make learning fun and interactive, boosting student motivation and retention.</p>
                 <a href="https://www.commonsense.org/education/articles/how-gamification-is-reshaping-education" target="_blank">
                     <button>Discover Games</button>
                 </a>
             </div>
-            <!-- Online Learning Platforms -->
+            
             <div class="card">
+                <i class="fas fa-laptop fa-3x"></i>
                 <h3>Online Learning Platforms</h3>
                 <p>Online platforms offer flexible learning opportunities for students of all ages and levels.</p>
                 <a href="https://elearningindustry.com/" target="_blank">
                     <button>Visit Platforms</button>
                 </a>
             </div>
-            <!-- Data Analytics -->
+
             <div class="card">
+                <i class="fas fa-chart-line fa-3x"></i>
                 <h3>Data Analytics</h3>
                 <p>Education data analytics helps educators track progress and tailor teaching methods to student needs.</p>
                 <a href="https://www.edutopia.org/article/how-data-can-improve-teaching-and-learning" target="_blank">
                     <button>Learn More</button>
                 </a>
             </div>
-            <!-- Collaborative Tools -->
+
             <div class="card">
+                <i class="fas fa-users fa-3x"></i>
                 <h3>Collaborative Tools</h3>
                 <p>Tools like shared whiteboards and video conferencing foster collaboration in remote learning environments.</p>
                 <a href="https://blog.zoom.us/how-zoom-supports-collaboration-in-education/" target="_blank">
@@ -76,10 +94,25 @@
                 </a>
             </div>
         </div>
+
+        <section class="testimonials">
+            <h2>What Educators Say</h2>
+            <blockquote>
+                "AI and VR have completely transformed how I engage with my students. The interactive tools have made learning fun and accessible for everyone." 
+                <cite>- Sarah Thompson, High School Teacher</cite>
+            </blockquote>
+            <blockquote>
+                "The ability to collaborate remotely has increased participation in class discussions and group projects." 
+                <cite>- Mark Johnson, University Professor</cite>
+            </blockquote>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Emerging EdTech Trends. All rights reserved.</p>
+        
     </footer>
+
+    <script src="tech.js"></script>
 </body>
 </html>
