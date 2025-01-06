@@ -10,7 +10,6 @@ body {
     height: 100vh;
     flex-direction: column;
 }
-
 .navbar {
     position: fixed; 
     top: 0;
@@ -32,20 +31,26 @@ body {
     align-items: center;
 
 }
-.navbar-logo img{
-    width: 25px;
-}
+
 
 .brand-name1{
-    color: #090909;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0e100f;
 }
 .brand-name2{
-    color: #2a8227;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #025540;
 }
 
 .logo {
-    height: 40px;
-    margin-right: 10px;
+    width: 20px; 
+    height: auto;
 }
 
 .navbar-links {
@@ -56,12 +61,17 @@ body {
 
 .navbar-links a {
     text-decoration: none;
-    color: rgb(10, 10, 10);
-    font-size: 16px;
+    color: #000;
+    font-size: 14px;
 }
 
 .navbar-links a.active {
+    text-decoration: underline; 
     font-weight: bold;
+    color: #004d40;
+}
+.navbar-links a:hover {
+    color: #004d40;
 }
 
 .task-title {

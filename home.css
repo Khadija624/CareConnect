@@ -11,12 +11,19 @@ body {
 
 /* Navbar Styling */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(251, 253, 251);
+    color: rgb(12, 12, 12);
+    z-index: 1000; 
+    margin-left: -20px;
 }
 
 .navbar-logo {
@@ -25,7 +32,7 @@ body {
 }
 
 .logo {
-  width: 30px; /* Adjusts the size of the logo */
+  width: 15px; 
   height: auto;
 }
 
@@ -68,7 +75,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  padding: 40px;
+  padding: 100px;
   background-color: white;
 }
 
@@ -488,12 +495,12 @@ footer a:hover {
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* Spread the columns */
+  justify-content: space-between; 
   align-items: flex-start;
-  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  flex-wrap: wrap; 
   max-width: 1200px;
   margin: 0 auto;
-  gap: 20px; /* Adds spacing between items */
+  gap: 70px; 
 }
 
 .footer-about {
@@ -503,7 +510,7 @@ footer a:hover {
 }
 
 .footer-about img {
-  width: 50px;
+  width: 30px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -582,5 +589,9 @@ footer a:hover {
   .footer-about {
       text-align: center;
   }
+}
+
+.logophoto{
+  display: flex;
 }
 
