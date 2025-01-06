@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="./formulaire.css">
+    <script>
+        
+        function toggleJobSalary() {
+            const jobYes = document.getElementById('job-yes');
+            const salaryField = document.getElementById('job-salary-group');
+
+            if (jobYes.checked) {
+                salaryField.style.display = 'block'; 
+            } else {
+                salaryField.style.display = 'none'; 
+            }
+        }
+
+        
+        function toggleApprenticeshipLevel() {
+            const apprenticeshipYes = document.getElementById('apprenticeship-yes');
+            const apprenticeshipField = document.getElementById('apprenticeship-level-group');
+
+            if (apprenticeshipYes.checked) {
+                apprenticeshipField.style.display = 'block'; 
+            } else {
+                apprenticeshipField.style.display = 'none'; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <img src="./PUBLIC/ASSETS/CClogo.png" alt="Care Connect Logo" class="logo">
+            <h1 class="brand-name1">Care</h1>
+            <h1 class="brand-name2">Connect</h1>
+          </div>
+          <ul class="navbar-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="about.html" class="active">About us</a></li>
+            <li><a href="search.html">Recherche</a></li>
+            <li><a href="services.html">Our Service</a></li>
+            <li><a href="home.html#footer">Contact us</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h2>FORM</h2>
+        <!-- Modification du formulaire avec action et method -->
+        <form action="./services.html" method="GET">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="status">University:</label>
+                <select id="status" name="status" required>
+                    <option value="">--Select--</option>
+                    <option value="student">Public</option>
+                    <option value="employee">Private</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Section for students -->
+            <div id="student-section">
+                <fieldset>
+                    <legend>Student</legend>
+                    <!-- Part-time job -->
+                    <div class="form-group">
+                        <label>Do you have a part-time job?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="job-yes" name="job" value="yes" onclick="toggleJobSalary()">
+                            <label for="job-yes">Yes</label>
+                            <input type="radio" id="job-no" name="job" value="no" onclick="toggleJobSalary()">
+                            <label for="job-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="job-salary-group" style="display: none;">
+                        <label for="job-salary">If yes, how much do you earn (€):</label>
+                        <input type="number" id="job-salary" name="job-salary" placeholder="Amount" min="0">
+                    </div>
+
+                    <!-- Apprenticeship -->
+                    <div class="form-group">
+                        <label>Do you have an apprenticeship?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="apprenticeship-yes" name="apprenticeship" value="yes" onclick="toggleApprenticeshipLevel()">
+                            <label for="apprenticeship-yes">Yes</label>
+                            <input type="radio" id="apprenticeship-no" name="apprenticeship" value="no" onclick="toggleApprenticeshipLevel()">
+                            <label for="apprenticeship-no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="apprenticeship-level-group" style="display: none;">
+                        <label for="apprenticeship-level">If yes, what is the level of your apprenticeship?</label>
+                        <input type="text" id="apprenticeship-level" name="apprenticeship-level" placeholder="Enter the level">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+body, h1, h2, ul, li, p, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f1cb;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.student-info-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.student-info-modal h2 {
+    margin: 0;
+}
+
+.modal-close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+}
+
+.modal-close-button:hover {
+    background-color: #d32f2f;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.navbar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(251, 253, 251);
+    color: rgb(12, 12, 12);
+    z-index: 1000; 
+    margin-left: -20px;
+
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.brand-name1{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0e100f;
+}
+.brand-name2{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #025540;
+}
+
+.logo {
+    width: 20px; 
+    height: auto;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.navbar-links a.active {
+    text-decoration: underline; 
+    font-weight: bold;
+    color: #004d40;
+}
+.navbar-links a:hover {
+    color: #004d40;
+}
+
+.chat-container {
+    display: flex;
+    margin-top: 60px; 
+    height: calc(100vh - 60px); 
+    background-color: #fff;
+}
+
+
+.member-list {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    overflow-y: auto;
+}
+
+.member-list h2 {
+    font-size: 22px;
+    color: #090909;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e5fcf9ac;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.member-item:hover {
+    background-color: #f0f0f0;
+}
+
+.member-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #c3e3f2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.principal{
+    box-shadow: #090909;
+    padding: 2% 2% 2% 2%;
+    border-radius: 50%;
+    margin-bottom: 90%;
+
+}
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #0f5a0e;
+    margin: 2% 2% 2% 2%;
+}
+
+.channel-header {
+    padding: 15px 20px;
+    background-color: #18751b;
+    color: white;
+    text-align: center;
+}
+
+.channel-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.username1{
+    color: #8f0ac9;
+    font-weight: 700;
+}
+
+.username2{
+    color: #6070e6;
+    font-weight: 700;
+}
+
+.username3{
+    color: #ec2f97;
+    font-weight: 700;
+}
+
+.chat-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 15px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.message-text {
+    background-color: #c4e9f3;
+    padding: 12px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    max-width: 70%;
+}
+
+.message-text1{
+    background-color: #f0e3f3;
+    padding: 12px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    max-width: 70%;
+}
+
+
+
+.input-container {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.user-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+
+.send-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1a6c17;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
