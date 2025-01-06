@@ -1,0 +1,155 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Connect</title>
+    <link rel="stylesheet" href="mental.css">
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <img src="PUBLIC/ASSETS/HISTORIE/CClogo.png" alt="Care Connect Logo" class="logo">
+            <h1 class="brand-name1">Care </h1>
+            <h1 class="brand-name2">Connect</h1>
+          </div>
+          <div class="search-bar" id="searchBar">
+            <input type="text" placeholder="Search...">
+          </div>
+          <ul class="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#" onclick="toggleSearchBar()">Search</a></li>
+            <li><a href="services.html">Our Service</a></li>
+            <li><a href="./home.html#footer">Contact us</a></li>
+          </ul>
+        </nav>
+    </header>
+
+
+    
+       
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>
+                        Student's <span class="text-green"> Mental </span> Health
+                    </h1>
+                    <p>
+                        Mental health is a cornerstone for student success, empowering learners to excel academically and socially. Our platform leverages cutting-edge solutions to ensure personalized support, streamlined accessibility, and enhanced well-being for university students worldwide.
+                    </p>
+                     
+                </div>
+                <div class="hero-image">
+                    <img src="PUBLIC/ASSETS/HISTORIE/mental.png" alt="Hero illustration">
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="tips">
+            <h2>Practical Tips for Managing Mental Health</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Study-Life Balance</h3>
+                    <p>Maintain a balance between academics and personal life. Allocate time for relaxation and hobbies.</p>
+                </div>
+                <div class="card">
+                    <h3>Stress Reduction Techniques</h3>
+                    <p>Practice mindfulness, meditation, or deep breathing exercises to reduce stress levels.</p>
+                </div>
+                <div class="card">
+                    <h3>Healthy Habits</h3>
+                    <p>Ensure proper sleep, nutrition, and regular exercise to keep your body and mind healthy.</p>
+                </div>
+                <div class="card">
+                    <h3>Connect with Friends</h3>
+                    <p>Spend time with supportive friends and family to reduce feelings of isolation and stress.</p>
+                </div>
+                <div class="card">
+                    <h3>Time Management</h3>
+                    <p>Create a schedule or use a planner to organize your tasks and avoid feeling overwhelmed.</p>
+                </div>
+                <div class="card">
+                    <h3>Seek Professional Help</h3>
+                    <p>If you feel overwhelmed, don't hesitate to consult a counselor or therapist for guidance.</p>
+                </div>
+                <div class="card">
+                    <h3>Gratitude Practice</h3>
+                    <p>Write down things you are grateful for daily to cultivate a positive mindset.</p>
+                </div>
+                <div class="card">
+                    <h3>Physical Activity</h3>
+                    <p>Engage in physical activities like yoga, jogging, or dancing to boost your mood and energy levels.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="interactive">
+            <h2>Interactive Tools and Content</h2>
+            <div class="video-slider">
+                <div class="slider-wrapper">
+                    <!-- Video 1 -->
+                    <div class="video-container">
+                        <img src="https://img.youtube.com/vi/DxIDKZHW3-E/maxresdefault.jpg" alt="Mental Health Video Thumbnail" class="video-thumbnail" onclick="playVideo(this, 'DxIDKZHW3-E')">
+                        <iframe src="https://www.youtube.com/embed/DxIDKZHW3-E?autoplay=1" title="Mental Health Video" allowfullscreen style="display: none;"></iframe>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="video-container">
+                        <img src="https://img.youtube.com/vi/JEtNxNW0bRU/maxresdefault.jpg" alt="Mental Health Video 1 Thumbnail" class="video-thumbnail" onclick="playVideo(this, 'JEtNxNW0bRU')">
+                        <iframe src="https://www.youtube.com/embed/JEtNxNW0bRU?autoplay=1" title="Mental Health Video 1" allowfullscreen style="display: none;"></iframe>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="video-container">
+                        <img src="https://img.youtube.com/vi/ur8TZf6HWSs/maxresdefault.jpg" alt="Mental Health Video 2 Thumbnail" class="video-thumbnail" onclick="playVideo(this, 'ur8TZf6HWSs')">
+                        <iframe src="https://www.youtube.com/embed/ur8TZf6HWSs?autoplay=1" title="Mental Health Video 2" allowfullscreen style="display: none;"></iframe>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="video-container">
+                        <img src="https://img.youtube.com/vi/oxx564hMBUI/maxresdefault.jpg" alt="Mental Health Video Thumbnail" class="video-thumbnail" onclick="playVideo(this, 'oxx564hMBUI')">
+                        <iframe src="https://www.youtube.com/embed/oxx564hMBUI?autoplay=1" title="Mental Health Video" allowfullscreen style="display: none;"></iframe>
+                    </div>
+                    <!-- Video 5 -->
+                    <div class="video-container">
+                        <img src="https://img.youtube.com/vi/iNyUmbmQQZg/maxresdefault.jpg" alt="Mental Health Video Thumbnail" class="video-thumbnail" onclick="playVideo(this, 'iNyUmbmQQZg')">
+                        <iframe src="https://www.youtube.com/embed/iNyUmbmQQZg?autoplay=1" title="Mental Health Video" allowfullscreen style="display: none;"></iframe>
+                    </div>
+                    
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+        
+       
+        <section id="feedback" class="feedback">
+            <h2>We Value YOU!</h2>
+            <p>Trust us with your Personal Stories and Testimonials!</p>
+            <div class="feedback-container">
+                <textarea id="feedbackInput" placeholder="Write here..."></textarea>
+                <button onclick="submitFeedback()">Send</button>
+            </div>
+        </section>
+
+        <section id="resources" class="resources">
+            <h2>Resources and Support Initiatives</h2>
+            <ul>
+                <li><a href="https://www.who.int/mental_health/en/" target="_blank">World Health Organization (WHO) Mental Health</a></li>
+                <li><a href="https://www.nami.org/Home" target="_blank">National Alliance on Mental Illness (NAMI)</a></li>
+                <li><a href="https://www.bestonlinetherapyservices.com/" target="_blank">Best Online Therapy Services </a></li>
+                <li><a href="https://www.crisistextline.org/" target="_blank">Crisis Text Line</a></li>
+            </ul>
+        </section>
+        
+    
+
+    <footer>
+        <p>&copy; 2025 Care Connect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="mental.js" defer></script>
+</body>
+</html>
