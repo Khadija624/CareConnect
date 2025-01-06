@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0.5px;
+    background-color: rgb(251, 253, 251);
+    color: rgb(12, 12, 12);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 27px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .brand-name1, .brand-name2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .brand-name2 {
+    color: #025540;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #004d40;
+  }
+  
+  .navbar-links a.active {
+    text-decoration: underline; /* Highlights the active link */
+    font-weight: bold;
+    color: #004d40;
+  }
+  
+  .search-bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Event Card */
+.event-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.event-card h2 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.event-card .event-date {
+    font-size: 1.2rem;
+    color: #0078D4;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.event-card .event-time {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.group-button {
+    background-color: #c8f0b0;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.group-button:hover {
+    background-color: #b8e0a0;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+/* Actions */
+.event-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.action-button {
+    flex: 1;
+    background-color: #025540;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.action-button:hover {
+    background-color: 025540;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004d40;
+    color: white;
+}
