@@ -1,112 +1,108 @@
-/* Général */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0.5px;
+  background-color: rgb(251, 253, 251);
+  color: rgb(12, 12, 12);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    width: 30px; /* Adjusts the size of the logo */
-    height: auto;
+  width: 27px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.brand-name1 {
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #0e100f;
+.brand-name1, .brand-name2 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .brand-name2 {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #025540;
+  color: #025540;
 }
 
 .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar-links a.active {
-    text-decoration: underline; /* Highlights the active link */
-    font-weight: bold;
-    color: #004d40;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-    color: #004d40;
+  color: #028657;
+}
+
+.search {
+    margin-top: 20%;
+  }
+.content{
+  position: relative;
+}
+
+.content img {
+  position: absolute;
+  width: 900px;
+  margin-left: 15%;
 }
   
-  /* Barre de recherche */
-  .search-container {
-    position: absolute;
-    top: 25px; /* Ajuste la distance sous le texte "Recherche" */
-    left: 50%;
-    margin-top: 50px;
-    margin-left: 450px;
-    transform: translateX(-50%);
-    width: 300px;
-    background-color: purple;
-    border: 1px solid #ddd;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 30px;
-    display: none; /* Masque la barre par défaut */
-    z-index: 1000;
-    border-radius: 20px 20px;
+.search-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      
   }
   
-  
-  
-  .search-box {
-    display: flex;
-    align-items: center;
+#search-input {
+ 
+      width: 300px;
+      margin-left: 200%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+      margin-top: 30%;
   }
   
-  .search-input {
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .search-button {
+    margin-top: 30%;
+      padding: 10px 20px;
+      background-color: #028657; /* Couleur verte */
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
   }
   
-  .search-btn {
-    background-color: #004d40;
-    border: none;
-    color: white;
-    margin-left: 20px;
-    padding: 10px 10px;
-    width: 50px;
-    cursor: pointer;
-    border-radius: 10px 10px;
-    font-size: 14px;
+  .search-button:hover {
+      background-color: #025540;
   }
   
-  .search-btn:hover {
-    background-color: #004d40;
+  footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 40px;
+      color: black;
   }
-  
+ 
+
