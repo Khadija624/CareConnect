@@ -27,11 +27,52 @@ body {
     z-index: 1000;
     padding: 20px;
     border-radius: 10px;
+    text-align: center; 
+    width: 300px; 
+}
+
+.large-avatar {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    background-color: #c3e3f2; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+    font-weight: bold;
+    margin: 0 auto 20px auto; 
+}
+.avatar1{
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    background-color: #c3e3f2; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+    font-weight: bold;
+    margin: 30%;
 }
 
 .student-info-modal h2 {
-    margin: 0;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px; 
+    text-align: center; 
 }
+
+
+
+.student-info-modal p {
+    text-align: left; 
+    margin: 5px 0;
+}
+
+
 
 .modal-close-button {
     background-color: #f44336;
@@ -59,69 +100,85 @@ body {
 }
 
 .navbar {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
-    height: 8%;
+    width: 100%;
+    height: 6%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 0.5px;
     background-color: rgb(251, 253, 251);
     color: rgb(12, 12, 12);
-    z-index: 1000; 
-    margin-left: -20px;
-
-}
-
-.navbar-logo {
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
     display: flex;
     align-items: center;
-
-}
-
-
-.brand-name1{
-    margin-left: 10px;
-    font-size: 20px;
+  }
+  
+  .logo {
+    width: 27px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  .brand-name1, .brand-name2 {
+    font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
-    color: #0e100f;
-}
-.brand-name2{
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
+  }
+  
+  .brand-name2 {
     color: #025540;
-}
-
-.logo {
-    width: 20px; 
-    height: auto;
-}
-
-.navbar-links {
+  }
+  
+  .navbar-links {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.navbar-links a {
+  }
+  
+  .navbar-links a {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
-}
-
-.navbar-links a.active {
-    text-decoration: underline; 
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #004d40;
+  }
+  
+  .navbar-links a.active {
+    text-decoration: underline; /* Highlights the active link */
     font-weight: bold;
     color: #004d40;
-}
-.navbar-links a:hover {
-    color: #004d40;
-}
+  }
+  
+  .search-bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
 
 .chat-container {
     display: flex;
@@ -176,10 +233,8 @@ body {
 
 .principal{
     box-shadow: #090909;
-    padding: 2% 2% 2% 2%;
+    padding: 3% 3% 3% 3%;
     border-radius: 50%;
-    margin-bottom: 90%;
-
 }
 .chat-area {
     flex: 1;
@@ -277,4 +332,92 @@ body {
     cursor: pointer;
 }
 
+.username1, .username2, .username3, .member-item {
+    cursor: pointer;
+}
 
+
+@media screen and (max-width: 600px) {
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centers logo horizontally */
+      height: 70px;           /* Set a determined height for the navbar */
+      padding: 0;             /* Adjust padding if needed */
+    }
+  
+    /* Only show the logo, hide brand names or keep them if you prefer */
+    .navbar-logo {
+      margin: 0;
+    }
+  
+    /* Hide any additional navbar links for mobile */
+    .navbar-links {
+      display: none;
+    }
+  
+    /* Hide the members list completely */
+    .member-list {
+      display: none;
+    }
+  
+    /* Adjust the chat container so it occupies the full width once the member-list is hidden */
+    .chat-container {
+      flex-direction: column;
+      margin-top: 70px; /* Space under the navbar; adjust if needed */
+      height: 90vh;
+    }
+  
+    /* Since the member-list is removed, the chat-area can take full width */
+    .chat-area {
+      width: 100%;
+      margin: 0;
+      box-shadow: none; /* Optionally remove the box-shadow if you want a cleaner look */
+    }
+  
+    /* Keep your chat messages readable on smaller screens */
+    .message-text,
+    .message-text1 {
+      font-size: 14px;
+      max-width: 90%;
+    }
+  
+    /* Adjust input container for mobile */
+    .input-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .user-input {
+      width: 100%;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  
+    .send-button {
+      width: 100%;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  
+    /* Student info modal scaling if needed */
+    .student-info-modal {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .large-avatar {
+      width: 100px;
+      height: 100px;
+      font-size: 40px;
+    }
+    
+    /* Smaller avatar inside the modal on phones */
+    .avatar1 {
+      width: 100px;
+      height: 100px;
+      font-size: 40px;
+      margin: 20px auto;
+    }
+  }
