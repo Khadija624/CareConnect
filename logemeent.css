@@ -1,0 +1,385 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0.5px;
+  background-color: rgb(251, 253, 251);
+  color: rgb(12, 12, 12);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 27px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.brand-name1, .brand-name2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-name2 {
+  color: #025540;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #028657;
+}
+  
+  
+  
+  
+  
+  
+  
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    height: 60vh; 
+    background-color: beige;
+    margin-top: 88px;
+    margin-bottom: 100px;
+  
+  }
+  
+  .fille {
+    position: absolute;
+    width: 50%;
+    height: 350px;
+    margin-left: 45%;
+  }
+  
+  
+  .content {
+    margin-left: 5%;
+    margin-top: 9%;
+    margin-right: 50%;
+    font-size: 20px;
+  }
+  
+  
+  .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  
+  .search-container {
+    bottom: 12%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(194, 219, 183); /* Vert clair */
+    border: 2px solid green; /* Vert foncé */
+    border-radius: 42px;
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container input[type="date"],
+  .search-container button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  
+  .search-container button {
+    background-color: #28a745; /* Vert */
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .search-container button:hover {
+    background-color: #28a745; /* Vert foncé au survol */
+  }
+  
+  
+  
+  .gallery {
+     display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto ;  
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .city {
+    position: relative; 
+    display: flex;
+    flex-direction: row; 
+    width: 610px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  } 
+  .city img {
+    right: 46%;
+    width: 610px;
+    height: 350px;
+  }
+  
+  .city-button {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #004d40; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .city-button:hover {
+    background-color: #004d40; 
+  }
+  
+  .gallery2 {
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr); 
+   grid-template-rows: auto auto ;  
+   gap: 20px;
+   padding: 20px;
+   max-width: 1200px;
+   margin: auto;
+  }
+  
+  .city1 {
+    position: relative; 
+    display: flex;
+    flex-direction: row; 
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  } 
+  .city1 img {
+    right: 46%;
+    width: 400px;
+    height: 250px;
+  }
+  
+  .gallery3 {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto ;  
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+   }
+   
+   .city2 {
+     position: relative; 
+     display: flex;
+     flex-direction: row; 
+     width: 610px;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   } 
+   .city2 img {
+     right: 46%;
+     width: 610px;
+     height: 350px;
+   }
+   .gallery4 {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto ;  
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+   }
+   
+   .city3 {
+     position: relative; 
+     display: flex;
+     flex-direction: row; 
+     width: 400px;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+   } 
+   .city3 img {
+     right: 46%;
+     width: 400px;
+     height: 250px;
+   }
+  
+  
+
+
+@media screen and (max-width: 768px) { 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    height: auto;
+    margin-top: 88px;
+  }
+
+  .fille {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .search-section {
+    flex-direction: column;
+  }
+
+  .search-container {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .search-container input[type="date"],
+  .search-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .city, .city1, .city2, .city3 {
+    width: 100%;
+  }
+
+  .city img, .city1 img, .city2 img, .city3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery2, .gallery3, .gallery4 {
+    grid-template-columns: 1fr;
+  }
+
+  .city-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .navbar-links {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .search-container {
+    padding: 10px;
+  }
+
+  .city-button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .fille {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .search-container input[type="date"], .search-container button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) { 
+  .hero {
+    height: 60vh;
+  }
+
+  .fille {
+    width: 50%;
+    height: 350px;
+    margin-left: 45%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .gallery2, .gallery3, .gallery4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .city img, .city1 img, .city2 img, .city3 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+  
+  
+  
+   
+  
