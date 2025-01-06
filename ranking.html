@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Rankings 2024</title>
+    <link rel="stylesheet" href="ranking.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <img src="PUBLIC/ASSETS/HISTORIE/CClogo.png" alt="Care Connect Logo" class="logo">
+            <h1 class="brand-name1">Care </h1>
+            <h1 class="brand-name2">Connect</h1>
+          </div>
+          <div class="search-bar" id="searchBar">
+            <input type="text" placeholder="Search...">
+          </div>
+          <ul class="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#" onclick="toggleSearchBar()">Search</a></li>
+            <li><a href="services.html">Our Service</a></li>
+            <li><a href="./home.html#footer">Contact us</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="ranking-overview">
+            <h2>Overview</h2>
+            <p>Explore the top university rankings for 2024 based on research, teaching, and global impact. Use the filters below to refine your search and find the best fit for your academic goals.</p>
+        </section>
+
+        <section class="filters">
+            <h3>Filter Rankings</h3>
+            <form id="filterForm">
+                <label for="region">Region:</label>
+                <select id="region" name="region">
+                    <option value="all">All</option>
+                    <option value="france">france</option>
+                    <option value="usa">usa</option>
+                    <option value="uk">uk</option>
+                    <option value="asia">african</option>
+                    <option value="africa">asia</option>
+                    <option value="australia">australia</option>
+                </select>
+        
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="all">All Subjects</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="arts">Arts</option>
+                </select>
+        
+                <label for="ranking-metric">Ranking Metric:</label>
+                <select id="ranking-metric" name="metric">
+                    <option value="overall">Overall</option>
+                    <option value="research">Research</option>
+                    <option value="teaching">Teaching</option>
+                    <option value="global-impact">Global Impact</option>
+                </select>
+        
+                <button type="button" class="btn" onclick="applyFilters()">Apply Filters</button>
+            </form>
+        </section>
+        
+        <section class="ranking-list">
+            <h3>Top Universities</h3>
+            <ul id="rankingList">
+                <!-- USA Universities -->
+                <li data-region="usa" data-subject="engineering" data-metric="research">
+                    <h4>1. Massachusetts Institute of Technology (MIT)</h4>
+                    <p>Location: Cambridge, USA</p>
+                </li>
+                <li data-region="usa" data-subject="medicine" data-metric="teaching">
+                    <h4>2. Stanford University</h4>
+                    <p>Location: Stanford, USA</p>
+                </li>
+        
+                <!-- UK Universities -->
+                <li data-region="uk" data-subject="arts" data-metric="global-impact">
+                    <h4>3. University of Oxford</h4>
+                    <p>Location: Oxford, UK</p>
+                </li>
+                <li data-region="uk" data-subject="law" data-metric="teaching">
+                    <h4>4. University of Cambridge</h4>
+                    <p>Location: Cambridge, UK</p>
+                </li>
+        
+                <!-- French Universities -->
+                <li data-region="france" data-subject="engineering" data-metric="research">
+                    <h4>5. École Polytechnique</h4>
+                    <p>Location: Palaiseau, France</p>
+                </li>
+                <li data-region="france" data-subject="business" data-metric="teaching">
+                    <h4>6. HEC Paris</h4>
+                    <p>Location: Jouy-en-Josas, France</p>
+                </li>
+                <li data-region="france" data-subject="science" data-metric="global-impact">
+                    <h4>7. Sorbonne University</h4>
+                    <p>Location: Paris, France</p>
+                </li>
+                <li data-region="france" data-subject="medicine" data-metric="research">
+                    <h4>8. Université PSL (Paris Sciences et Lettres)</h4>
+                    <p>Location: Paris, France</p>
+                </li>
+                <li data-region="france" data-subject="arts" data-metric="global-impact">
+                    <h4>9. Sciences Po</h4>
+                    <p>Location: Paris, France</p>
+                </li>
+        
+                <!-- Asian Universities -->
+                <li data-region="asia" data-subject="engineering" data-metric="research">
+                    <h4>10. University of Tokyo</h4>
+                    <p>Location: Tokyo, Japan</p>
+                </li>
+                <li data-region="asia" data-subject="technology" data-metric="teaching">
+                    <h4>11. Tsinghua University</h4>
+                    <p>Location: Beijing, China</p>
+                </li>
+        
+                <!-- African Universities -->
+                <li data-region="africa" data-subject="business" data-metric="teaching">
+                    <h4>12. University of Cape Town</h4>
+                    <p>Location: Cape Town, South Africa</p>
+                </li>
+        
+                <!-- Australian Universities -->
+                <li data-region="australia" data-subject="science" data-metric="teaching">
+                    <h4>13. University of Melbourne</h4>
+                    <p>Location: Melbourne, Australia</p>
+                </li>
+            </ul>
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 World University Rankings. All rights reserved.</p>
+    </footer>
+    <script src="ranking.js"></script>
+</body>
+</html>
