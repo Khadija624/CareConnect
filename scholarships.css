@@ -1,0 +1,262 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 30px; 
+    height: auto;
+  }
+  
+  .brand-name1 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0e100f;
+  }
+  
+  .brand-name2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #025540;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a.active {
+    text-decoration: underline; 
+    font-weight: bold;
+    color: #004d40;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .navbar-links a:hover {
+    color: #004d40;
+  }
+
+
+
+/* Tips Section Styling */
+.tips {
+    padding: 20px;
+    text-align: center;
+    background-color:white;
+}
+
+.tips h2 {
+    color: #000000;
+    margin-bottom: 20px;
+   
+}
+
+.tips-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /
+}
+
+.tip-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.tip-card h3 {
+    color:#000000;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.tip-link {
+    display: inline-block;
+    color: #fff;
+    background-color: #025540;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.tip-link:hover {
+    background-color: #028657;
+}
+
+.resources {
+    padding: 20px;
+    background: #f0fdf4;
+}
+
+.resources h2 {
+    text-align: center;
+    color: #025540;
+    margin-bottom: 20px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.resources li {
+    margin: 10px 0;
+}
+
+.resources a {
+    color: #025540;
+    text-decoration: none;
+}
+
+.scholarship-list {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scholarship-card img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.scholarship-card h3 {
+    color: #000000;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.scholarship-card p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.scholarship-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #025540;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.scholarship-card .btn:hover {
+    background-color: #028657;
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden; /* Cache les éléments en dehors du conteneur */
+    width: 100%; /* S'adapte à la largeur du parent */
+}
+
+.scholarship-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.scholarship-card {
+    width: 300px;
+    flex-shrink: 0; /* Empêche le rétrécissement */
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #025540;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #025540;
+    color: white;
+    width: 100%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .prev,
+    .next {
+        width: 30px;
+        height: 30px;
+        left: 5px;
+        right: 5px;
+    }
+}
