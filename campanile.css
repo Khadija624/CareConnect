@@ -5,22 +5,20 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 }
-body, ul {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  /* Navbar Styling */
-  .navbar {
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    padding: 10px 0.5px;
+    background-color: rgb(251, 253, 251);
+    color: rgb(12, 12, 12);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
   .navbar-logo {
@@ -29,22 +27,17 @@ body, ul {
   }
   
   .logo {
-    width: 30px; /* Adjusts the size of the logo */
+    width: 27px;
     height: auto;
+    margin-right: 10px;
   }
   
-  .brand-name1 {
-    margin-left: 10px;
-    font-size: 20px;
+  .brand-name1, .brand-name2 {
+    font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
-    color: #0e100f;
   }
   
   .brand-name2 {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
     color: #025540;
   }
   
@@ -54,23 +47,19 @@ body, ul {
     gap: 20px;
   }
   
-  .navbar-links a.active {
-    text-decoration: underline; /* Highlights the active link */
-    font-weight: bold;
-    color: #004d40;
-  }
-  
   .navbar-links a {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
+    transition: color 0.3s;
   }
   
   .navbar-links a:hover {
-    color: #004d40;
+    color: #028657;
   }
 
 .nav {
+    margin-top: 6%;
     padding: 20px;
     background-color: rgb(19, 73, 19);
     color: white;
@@ -196,4 +185,95 @@ body, ul {
 .highlights li {
     margin: 10px 0;
     color: #555;
+}
+
+@media (max-width: 1200px) {
+    .navbar-links {
+        font-size: 14px;
+    }
+
+    .gallery .main-image img {
+        width: 150%;
+    }
+
+    .gallery .thumbnail-images img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hotel-info {
+        margin: 10px;
+    }
+
+    .btn-reserve {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .nav h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gallery .main-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery .thumbnail-images {
+        flex-direction: column;
+    }
+
+    .gallery .thumbnail-images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hotel-info, .description, .highlights {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .btn-reserve {
+        width: 100%;
+    }
+
+    .nav h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-links {
+        font-size: 12px;
+    }
+
+    .gallery .main-image img {
+        width: 100%;
+    }
+
+    .gallery .thumbnail-images img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hotel-info, .description, .highlights {
+        padding: 10px;
+    }
+
+    .btn-reserve {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .nav h1 {
+        font-size: 18px;
+    }
 }
