@@ -4,22 +4,20 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 } 
-body, ul {
-
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-/* Navbar Styling */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  padding: 10px 0.5px;
+  background-color: rgb(251, 253, 251);
+  color: rgb(12, 12, 12);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
@@ -28,22 +26,17 @@ body, ul {
 }
 
 .logo {
-  width: 30px; /* Adjusts the size of the logo */
+  width: 27px;
   height: auto;
+  margin-right: 10px;
 }
 
-.brand-name1 {
-  margin-left: 10px;
-  font-size: 20px;
+.brand-name1, .brand-name2 {
+  font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
-  color: #0e100f;
 }
 
 .brand-name2 {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
   color: #025540;
 }
 
@@ -53,24 +46,19 @@ body, ul {
   gap: 20px;
 }
 
-.navbar-links a.active {
-  text-decoration: underline; /* Highlights the active link */
-  font-weight: bold;
-  color: #004d40;
-}
-
 .navbar-links a {
   text-decoration: none;
   color: #000;
-  font-size: 14px;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-  color: #004d40;
+  color: #028657;
 }
 
 .Fes h1 {
-  margin-top: 2%;
+  margin-top: 10%;
   margin-left: 2%;
   font-size: 24px;
   color: #333;
@@ -158,4 +146,104 @@ body, ul {
 
 .btn-availability:hover {
     background-color: green;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+  }
+
+  .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+  }
+
+  .hotel-card {
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .hotel-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .hotel-info h2 {
+      font-size: 16px;
+  }
+
+  .Fes h1 {
+      font-size: 20px;
+      margin-left: 5%;
+  }
+}
+
+/* Adaptation pour les téléphones (écrans inférieurs à 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+      padding: 5px;
+  }
+
+  .navbar-logo .logo {
+      width: 20px;
+  }
+
+  .navbar-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hotel-card {
+      flex-direction: column;
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .hotel-card img {
+      width: 100%;
+      height: 150px;
+  }
+
+  .hotel-info h2 {
+      font-size: 14px;
+  }
+
+  .Fes h1 {
+      font-size: 18px;
+      margin-left: 5%;
+  }
+
+  .btn-availability {
+      font-size: 12px;
+      padding: 8px 12px;
+  }
+}
+
+/* Adaptation pour les petits téléphones (écrans inférieurs à 480px) */
+@media screen and (max-width: 480px) {
+  .navbar-links {
+      display: none; /* Cacher le menu pour plus de place */
+  }
+
+  .hotel-card {
+      flex-direction: column;
+      margin: 10px 0;
+  }
+
+  .hotel-info {
+      font-size: 12px;
+  }
+
+  .Fes h1 {
+      font-size: 16px;
+  }
+
+  .btn-availability {
+      font-size: 10px;
+      padding: 6px 10px;
+  }
 }
