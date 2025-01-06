@@ -160,3 +160,90 @@ body, ul {
 .btn-availability:hover {
     background-color: green;
 }
+
+@media (max-width: 768px) {
+  .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+  }
+
+  .hotel-list {
+      padding: 10px;
+  }
+
+  .hotel-card {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hotel-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .hotel-info {
+      text-align: center;
+  }
+
+  .Fes h1 {
+      font-size: 20px;
+      text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-links {
+      gap: 15px;
+  }
+
+  .hotel-list {
+      padding: 15px;
+  }
+
+  .hotel-card {
+      flex-direction: row;
+  }
+
+  .hotel-card img {
+      width: 120px;
+      height: 140px;
+  }
+
+  .hotel-info {
+      padding-left: 10px;
+  }
+
+  .Fes h1 {
+      font-size: 22px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  .navbar-links {
+      gap: 20px;
+  }
+
+  .hotel-list {
+      padding: 20px;
+  }
+
+  .hotel-card {
+      flex-direction: row;
+  }
+
+  .hotel-card img {
+      width: 150px;
+      height: 171px;
+  }
+
+  .hotel-info {
+      padding-left: 15px;
+  }
+
+  .Fes h1 {
+      font-size: 24px;
+  }
+}
